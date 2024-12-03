@@ -5,9 +5,11 @@ This project aims to predict the next day's stock closing price using historical
 ### Features
 * Stock Data: Nasdaq 100 and S&P 500 indices (from Yahoo Finance and TC 2000).
 * Sentiment Data: Extracted from Bloomberg Terminal, including sentiment from financial news and tweets.
+
 ![Sentiment Data Bloomberg Terminal](../Graphs_Figs/sentiment_bloomberg.gif)
 
 * Models: Time series models (Auto-ARIMA, SARIMAX), Random Forest, and LSTM.
+
 ![Closing Prices over Time](../Graphs_Figs/closing_price_over_time_both.png)
 
 * Evaluation Metrics: MAE, MSE, RMSE, R² Score, and MSE for LSTM.
