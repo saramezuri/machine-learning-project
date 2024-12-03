@@ -19,6 +19,8 @@ The models were evaluated using the Nasdaq 100 and S&P 500 indices. Here’s a s
 
 SARIMAX: The SARIMAX model with sentiment as an exogenous variable did not improve prediction accuracy. The model's performance showed limited predictive power, particularly in the short-term. Despite incorporating sentiment data, the model only predicted tomorrow's stock price to be the same as today's, indicating no short-term predictive value. Key evaluation metrics for SARIMAX (MAE = $2714.69, RMSE = $2758.00) suggested that the inclusion of sentiment did not enhance its forecasting ability.
 
+![Ts](../Graphs_Figs/ts_forecast_ndx_sentiment.png)
+
 Random Forest: This model performed better than SARIMAX, with notable improvements in predictive accuracy. However, when sentiment data was added, performance actually worsened. The Random Forest model showed a solid $R^2$ score of 0.78 for the Nasdaq 100, indicating that it was able to explain a significant portion of the variance in the data. The best evaluation metrics were achieved for the S&P 500 with MAE = $191.18 and RMSE = $331.56.
 
 LSTM: The LSTM model outperformed both SARIMAX and Random Forest, showing the best predictive power. It demonstrated strong performance in capturing sequential dependencies in the data. The model achieved an MSE of $0.005$ for Nasdaq and $0.0007$ for S&P 500, indicating its capability in learning long-term patterns. Despite its effectiveness, adding sentiment data to LSTM did not improve its performance.
