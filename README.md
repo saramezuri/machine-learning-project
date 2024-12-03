@@ -23,7 +23,7 @@ SARIMAX: The SARIMAX model with sentiment as an exogenous variable did not impro
 
 Random Forest: This model performed better than SARIMAX, with notable improvements in predictive accuracy. However, when sentiment data was added, performance actually worsened. The Random Forest model showed a solid $R^2$ score of 0.78 for the Nasdaq 100, indicating that it was able to explain a significant portion of the variance in the data. The best evaluation metrics were achieved for the S&P 500 with MAE = $191.18 and RMSE = $331.56.
 
-![RF](Graphs_Figs/random_sp_sentiment.png)
+![RF](Graphs_Figs/random_sp_test.png)
 
 LSTM: The LSTM model outperformed both SARIMAX and Random Forest, showing the best predictive power. It demonstrated strong performance in capturing sequential dependencies in the data. The model achieved an MSE of $0.005$ for Nasdaq and $0.0007$ for S&P 500, indicating its capability to learn long-term patterns. Despite its effectiveness, adding sentiment data to LSTM did not improve its performance.
 
