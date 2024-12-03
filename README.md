@@ -1,5 +1,7 @@
 # Predicting Next-Day Stock Closing Prices using Machine Learning and Sentiment Analysis
 
+## Sara Mezuri and Alireza Golkarieh
+
 This project aims to predict the next day's stock closing price using historical stock data and sentiment analysis from financial news and social media. It explores different models, including Auto-ARIMA, SARIMAX, Random Forest, and LSTM, and evaluates the impact of sentiment data on stock price predictions.
 
 ### Features
