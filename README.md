@@ -27,7 +27,7 @@ Random Forest: This model performed better than SARIMAX, with notable improvemen
 
 LSTM: The LSTM model outperformed both SARIMAX and Random Forest, showing the best predictive power. It demonstrated strong performance in capturing sequential dependencies in the data. The model achieved an MSE of $0.005$ for Nasdaq and $0.0007$ for S&P 500, indicating its capability to learn long-term patterns. Despite its effectiveness, adding sentiment data to LSTM did not improve its performance.
 
-![LSTM](Graphs_Figs/ltsm_sp_sentiment.png)
+![LSTM](Graphs_Figs/lstm_sp_sentiment.png)
 
 ### Limitations
 
