@@ -10,7 +10,7 @@ This project aims to predict the next day's stock closing price using historical
 
 * Models: Time series models (Auto-ARIMA, SARIMAX), Random Forest, and LSTM.
 
-![Closing Prices over Time](../Graphs_Figs/closing_price_over_time_both.png)
+![Closing Prices over Time](Graphs_Figs/closing_price_over_time_both.png)
 
 * Evaluation Metrics: MAE, MSE, RMSE, R² Score, and MSE for LSTM.
 
@@ -19,7 +19,7 @@ The models were evaluated using the Nasdaq 100 and S&P 500 indices. Here’s a s
 
 SARIMAX: The SARIMAX model with sentiment as an exogenous variable did not improve prediction accuracy. The model's performance showed limited predictive power, particularly in the short-term. Despite incorporating sentiment data, the model only predicted tomorrow's stock price to be the same as today's, indicating no short-term predictive value. Key evaluation metrics for SARIMAX (MAE = $2714.69, RMSE = $2758.00) suggested that the inclusion of sentiment did not enhance its forecasting ability.
 
-![Ts](../Graphs_Figs/ts_forecast_ndx_sentiment.png)
+![Ts](Graphs_Figs/ts_forecast_ndx_sentiment.png)
 
 Random Forest: This model performed better than SARIMAX, with notable improvements in predictive accuracy. However, when sentiment data was added, performance actually worsened. The Random Forest model showed a solid $R^2$ score of 0.78 for the Nasdaq 100, indicating that it was able to explain a significant portion of the variance in the data. The best evaluation metrics were achieved for the S&P 500 with MAE = $191.18 and RMSE = $331.56.
 
