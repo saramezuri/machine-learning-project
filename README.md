@@ -1,26 +1,19 @@
-## Predicting Next-Day Stock Closing Prices using Machine Learning and Sentiment Analysis
+# Predicting Next-Day Stock Closing Prices using Machine Learning and Sentiment Analysis
+
 This project aims to predict the next day's stock closing price using historical stock data and sentiment analysis from financial news and social media. It explores different models, including Auto-ARIMA, SARIMAX, Random Forest, and LSTM, and evaluates the impact of sentiment data on stock price predictions.
 
-Features
-Stock Data: Nasdaq 100 and S&P 500 indices (from Yahoo Finance and TC 2000).
-Sentiment Data: Extracted from Bloomberg Terminal, including sentiment from financial news and tweets.
-Models: Time series models (Auto-ARIMA, SARIMAX), Random Forest, and LSTM.
-Evaluation Metrics: MAE, MSE, RMSE, R² Score, and MSE for LSTM.
-Installation
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/yourusername/stock-price-prediction.git
-Install the required dependencies:
-bash
-Copy code
-pip install -r requirements.txt
-Usage
-Prepare your data by following the preprocessing steps in the data_preprocessing.py file.
-Train models by running the train_models.py script.
-Evaluate the models with the evaluate_models.py script.
-Results
-The models were evaluated using the Nasdaq 100 and S&P 500 indices. Here’s a summary of the results:
+### Features
+* Stock Data: Nasdaq $100$ and $S&P$ $500$ indices (from Yahoo Finance and TC 2000).
+* Sentiment Data: Extracted from Bloomberg Terminal, including sentiment from financial news and tweets.
+![Sentiment Data Bloomberg Terminal](../Graphs_Figs/sentiment_bloomberg.gif)
+
+* Models: Time series models (Auto-ARIMA, SARIMAX), Random Forest, and LSTM.
+![Closing Prices over Time](../Graphs_Figs/closing_price_over_time_both.png)
+
+* Evaluation Metrics: MAE, MSE, RMSE, R² Score, and MSE for LSTM.
+
+### Results
+The models were evaluated using the Nasdaq $100$ and $S&P$ $500$ indices. Here’s a summary of the results:
 
 SARIMAX: The SARIMAX model with sentiment as an exogenous variable did not improve prediction accuracy. The model's performance showed limited predictive power, particularly in the short-term. Despite incorporating sentiment data, the model only predicted tomorrow's stock price to be the same as today's, indicating no short-term predictive value. Key evaluation metrics for SARIMAX (MAE = $2714.69, RMSE = $2758.00) suggested that the inclusion of sentiment did not enhance its forecasting ability.
 
